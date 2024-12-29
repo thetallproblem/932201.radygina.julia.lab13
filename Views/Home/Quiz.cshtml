@@ -1,0 +1,25 @@
+﻿@model Lab13.Models.Expression
+
+@{
+    var controller = ViewContext.RouteData.Values["Controller"] as string;
+    var action = ViewContext.RouteData.Values["Action"] as string;
+    ViewData["Title"] = "Quiz";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>@ViewData["data"]</p>
+
+@using (Html.BeginForm(action, controller, FormMethod.Post))
+{
+    <div class="bold mb-3">@Model.firstValue @Model.operation @Model.secondValue = </div>
+
+    <input type="hidden" name="id" value="@Model.id" />
+
+    <input type="text" name="userAnswer" />
+
+    <div class="buttons">
+        <input type="submit" name="action" value="Next" class="next-but" />
+        <input type="submit" name="action" value="Finish" class="finish-but" />
+    </div>
+}
+

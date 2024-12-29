@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Quiz results";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (!@Model.isEmpty())
+{
+    <h3>Right answers @Model.rightAnswers of @Model.expressions.Count</h3>
+}
+
+<ol class="answers">
+    @if (@Model.isEmpty())
+    {
+        <li class="bold">No data</li>
+    }
+    else
+    {
+        foreach (var expression in @Model.expressions)
+        {
+            <li>@expression.firstValue @expression.operation @expression.secondValue = @expression.userAnswer</li>
+        }
+    }
+</ol>

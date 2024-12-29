@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+header {
+    padding: 1rem 4rem;
+    background-color: black;
+    font-size: 22px;
+    color: gray;
+    display: flex;
+}
+
+main {
+    padding: 1rem 4rem;
+}
+
+.logo {
+    margin-right: 1rem;
+    padding-right: 1rem;
+}
+
+.pages {
+    padding: 1rem 2.5rem;
+}
+
+.home {
+    color: gray;
+    font-size: 16px;
+}
+
+li {
+    padding-bottom: 0.25rem;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+p {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+h1 {
+    padding-bottom: 0.5rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.next-but {
+    height: 30px;
+    width: 60px;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.finish-but {
+    height: 30px;
+    width: 60px;
+    background-color: royalblue;
+    color: white;
+}
+
+.answers {
+    margin-left: 3rem;
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+footer {
+    padding-left: 4rem;
+    padding-top: 1rem;
+}
